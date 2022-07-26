@@ -6,15 +6,19 @@
 	<title>Tienda de ropa</title>
     <link rel="shortcut icon" href="logos/logomin.png">
     <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://kit.fontawesome.com/1517603597.js" crossorigin="anonymous"></script>
 </head>
-<body>
-
+<body class="grid-container">
+	<header>
         <nav>
 			<a href="index.html">
-				<img id="logoprincipal" src="logos/logo.png" alt="Logo de tienda de ropa asos">
+				<img class="logo" src="logos/logo.png" alt="Logo de tienda de ropa asos">
 			</a>
+			<button class="navtoggle">
+				<i class="fa-solid fa-bars-staggered"></i>
+			</button>
 
-			<ul>
+			<ul class="nav-menu nav-menu_visible">
 				<li>
 					<a href="paginas/nosotros.html">Nosotros</a>
 				</li>
@@ -29,33 +33,33 @@
 				</li>
 			</ul>
 		</nav>
-	<!-- fin del header -->
-
-	<main>
 		<section>
-			<div class="contenedor">
+			<div class="contenedorPrin">
 	           	<h1 class="textencima bgLight">Con la compra de dos prendas te llevas una de regalo</h1>
         	</div>
 		</section>
-	</main>
+	</header>
+	<!-- fin del header -->
+
+	
 
 	<footer>
 		<ul>
 			<li>
 				<a href="https://twitter.com/" target="_blank">
-					<img src="logos/twitter.png" alt="twitter asos">
+					<img class="logoSm" src="logos/twitter.png" alt="twitter asos">
 				</a>
 			</li>
 
 			<li>
 				<a href="https://facebook.com/" target="_blank">
-					<img src="logos/facebook.png" alt="facebook asos">
+					<img class="logoSm" src="logos/facebook.png" alt="facebook asos">
 				</a>
 			</li>
 
 			<li>
 				<a href="https://instagram.com/" target="_blank">
-					<img src="logos/instagram.png" alt="instagram asos">
+					<img class="logoSm" src="logos/instagram.png" alt="instagram asos">
 				</a>
 			</li>
 		</ul>	
