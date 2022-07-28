@@ -1,0 +1,106 @@
+
+header{
+    grid-area: header;
+    width: 100%;
+    height: 94vh;
+    background-image: linear-gradient(rgba(55,55,55,0.60), rgba(60,60,60,0.40)), url(../imagenes/tiendafoto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .bgLight{
+	background-color: rgba(110, 110, 110, 0.8);
+	font-family: 'Bangers', cursive;
+	width: 50%;
+	height: 50%;
+	border-radius: 20%;
+	text-align: center;
+	overflow: auto;
+	}
+
+	nav{
+	    width: 80%;
+	    margin: auto;
+	    padding: 35px 0;
+	    display: flex;
+	    align-items: center;
+	    justify-content: space-between;
+
+	    .navtoggle{
+	    background: none;
+	    border: none;
+	    font-size: 1.2em;
+	    padding: 0 20px;
+	    line-height: 60px;
+	    display: none;
+		}
+
+	    .logo{
+	    width: 130px;
+	    cursor: pointer;
+		}
+
+		ul{
+	    display: flex;
+		
+			li{
+			    list-style: none;
+			    display: inline-block;
+			    margin: 0 20px;
+			    position: relative;
+			    &:hover::before{
+		    			width: 100%;
+				}
+
+			    &::before{
+			    	content: "";
+				    height: 3px;
+				    width: 0%;
+				    background: white;
+				    position: absolute;
+				    left: 0;
+				    bottom: -12px;
+				    transition: 0.4s ease-out;
+
+					
+		    }
+
+			    a{
+			    text-decoration: none;
+			    color: white;
+			    font-size: $textSm;
+				}
+	    	}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+    .logo{
+        width: 130px;
+        padding: 0 70%;
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: rgba(25, 25, 25, 0.9);
+        position: fixed;
+        left: auto;
+        top: 100px;
+        width: 80%;
+        padding: 20px 0;
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .navtoggle{
+        display: block;
+    }
+
+    .nav-menu_visible{
+        left: auto;
+    }
+}
